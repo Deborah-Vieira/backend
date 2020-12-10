@@ -2,7 +2,8 @@ import express from 'express'
 import knex from 'knex'
 import cors from 'cors'
 import dotenv from 'dotenv'
-import signUp from './endpoints/signUp'
+import createUser from './endpoints/signUp'
+import login from './endpoints/login'
 
 
 
@@ -25,7 +26,8 @@ export const connection = knex({
 })
 
 //rotas
-app.post('/user/signup', signUp)
+app.post('/user/signup', createUser)
+app.post('/user/login', login)
 
 
 app.listen(3003, () => {

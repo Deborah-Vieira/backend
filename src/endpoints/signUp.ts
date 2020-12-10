@@ -2,9 +2,11 @@
 import {Request, Response} from 'express'
 import insertUser from '../data/insertUser'
 import { generateToken } from '../services/authenticator'
+import { hash } from '../services/hashManager'
 import { idGenerator } from '../services/idGenerator'
 
-export default async function signUp(req:Request, res: Response){
+
+export default async function createUser(req:Request, res: Response){
     try {
         if(!req.body.name || !req.body.email || !req.body.nickname ||
              !req.body.password 
@@ -21,12 +23,15 @@ export default async function signUp(req:Request, res: Response){
         //gerando o id
         const id:string =  idGenerator()
 
+        //hasheando a senha do user
+        const cypherPassword = await hash(req.body.password);
+
         await insertUser(
             id,
             req.body.name,
             req.body.email,
             req.body.nickname,
-            req.body.password
+            cypherPassword
         )
 
         //gerando o token

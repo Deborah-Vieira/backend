@@ -1,8 +1,6 @@
-//inserindo no banco de dados 
-
 import { connection } from "../index"
 
-//passo por paramentro as informações de cadastro e insiro no banco
+//passo por paramentro as informações de cadastro para inserção no banco
 export default async function insertUser(
     id: string,
     name: string,
