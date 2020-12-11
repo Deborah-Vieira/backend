@@ -1,7 +1,9 @@
 import { Request, Response } from "express"
-import selectUserByEmail, { User } from "../data/selectUserByEmail"
-import { generateToken } from "../services/authenticator"
-import { compare } from "../services/hashManager"
+import  selectUserByEmail, { User }  from "../../data/selectUserByEmail"
+import { generateToken } from "../../services/authenticator"
+import { compare } from "../../services/hashManager"
+
+
 
 export default async function login(
    req: Request,
