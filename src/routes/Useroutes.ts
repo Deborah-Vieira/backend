@@ -1,12 +1,10 @@
 import express from 'express'
-import createPhoto from '../controller/photos/photos'
-import login from '../controller/user/login'
-import createUser from '../controller/user/signUp'
+import { UserController } from '../controller/user/UserController'
 
 //importando o router do express
 export const useRouter = express.Router()
+const useController = new UserController()
 
-useRouter.post("/signUp", createUser)
-useRouter.post("/login", login)
+useRouter.post("/signUp", useController.signup )
+useRouter.post("/login", useController.login)
 
-useRouter.post('/', createPhoto) 

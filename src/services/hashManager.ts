@@ -1,17 +1,19 @@
 import * as bcrytp from 'bcryptjs'
 
-export const hash = async(plainText:string):Promise<string> => {
-    //conta de segurança, no caso 12
-    const rounds = Number(process.env.BCRYPT_COST);
-    //string aleatoria
-    const salt = await bcrytp.genSalt(rounds)
-    //
-    return  bcrytp.hash(plainText, salt)
+export class HashManager {
+    public async  hash (plainText:string):Promise<string>  {
+        //conta de segurança, no caso 12
+        const rounds = Number(process.env.BCRYPT_COST);
+        //string aleatoria
+        const salt = await bcrytp.genSalt(rounds)
+        //resultado
+        const result = bcrytp.hash(plainText, salt)
+        return  result
+    }
+    //comparando
+    public async compare( plainText:string, cypherText:string):Promise<boolean> {
+     return await bcrytp.compare( plainText ,cypherText)
 
-}
+    }
 
-//comparando
-export const compare = async ( plainText:string, cypherText:string):
- Promise<boolean>  => {
-    return bcrytp.compare( plainText ,cypherText)
 }
