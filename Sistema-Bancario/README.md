@@ -15,7 +15,7 @@
 
 <p>O projeto Sistema Bancário demonstra a utilização de um servidor Express com Node. Aqui foram criados 02 endpoints, que criam e listam contas de usuário. </p>
 
-https://user-images.githubusercontent.com/31224361/106800918-d6580e80-663f-11eb-81a0-4586784360ee.mp4
+![sistemabancario](https://user-images.githubusercontent.com/31224361/106802816-364fb480-6642-11eb-9622-3625a2c5d7d0.gif)
 
 ## :wrench: Instalação
 
