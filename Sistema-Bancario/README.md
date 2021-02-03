@@ -1,33 +1,88 @@
-### Funcionalidades
+<h1 >Astromatch</h1>
+<p >Projeto confeccionado no curso de Desenvolvedor(a) fullstack da Labenu. O projeto tem como finalizade demonstrar a criação de um servidor utilizando Node e Express. Utilizando Typescript para criação de endpoints.</p>
 
-- **Criar Conta**
+# :ledger: Índice
 
-  Um cliente pode criar uma conta no banco se tiver idade maior do que 18 anos. Ele deve informar: **nome**, **CPF** e **data de nascimento**. As contas devem guardar essas informações e uma propriedade para representar o **saldo** do usuário. Além disso devem ser guardados, também, todos os gastos do usuário num array de **extrato** (possuindo o **valor**, a **data** e uma **descrição**). Lembre-se de que todas as contas, ao serem criadas, começam com o saldo zerado. Não podem existir dois usuários diferentes com o mesmo CPF.
+<!--ts-->
 
-- **Pegar Saldo**
+- [Sobre](#sobre)
+- [Instalação](#instalacao)
+- [Requisições](#requisicoes)
+- [Tecnologias](#tecnologias)
+<!--te-->
 
-  O usuário deve conseguir verificar o saldo da sua conta, passando o seu nome e o seu CPF.
+## :pencil2: Sobre
 
-- **Adicionar saldo**
+<p>O projeto Sistema Bancário demonstra a utilização de um servidor Express com Node. Aqui foram criados 02 endpoints, que criam e listam contas de usuário. </p>
 
-  O usuário deve conseguir adicionar saldo à sua conta, passando seu nome, o CPF e o valor que desejar.
+projeto roando aqui
+![gif](https://user-images.githubusercontent.com/31224361/106182119-2dac3980-617d-11eb-88f0-62a8fed97b26.gif)
 
-- **Pagar Conta**
+## :wrench: Instalação
 
-  Esta funcionalidade é muito importante para os clientes. Eles podem pagar uma conta, se quiserem, passando: um valor, uma descrição e uma data de pagamento. Caso ele não informe a date, deve-se considerar que o pagamento é para ser feito no mesmo dia. Além disso, devemos nos atentar: ele não pode agendar um pagamento para um dia que já passou ou tentar pagar uma conta cujo valor seja maior do que o seu saldo.
+#### instale o Git, NodeJS e npm:
 
-- **Transferência Interna**
+<p> Versões mínimas ou superiores.</p>
 
-  A transferência entre contas é muito mais interessante ao banco do que aos clientes em si, porque, com esta funcionalidade, ela consegue influenciar seus clientes a convencerem conhecidos a migrarem para o banco. Para realizar esta transferência, o usuário deve informar o seu nome, o seu CPF, o nome do destinatário, o CPF do destinatário e o valor em si. Transferências não podem ser agendadas e devem respeitar o saldo do usuário remetente.
+$ node -v
+v12.20.1
 
-### Requisitos Mínimos
+$ npm -v
+6.14.10</p>
 
-O mínimo do projeto consiste nas funcionalidades de: Criar conta, pegar as contas e adicionar uma validação de idade. Para isto, estamos propondo um conjunto de etapas de desenvolvimento.
+#### Em seu computador, baixe o repositório:
 
-1. Crie um **tipo** para representar uma conta para o usuário
-2. Crie um array que armazene usuários na aplicação. Caso queira, pode iniciar este array com valores pré-definidos.
-3. Crie mais um **tipo**: para representar as transações que serão salvas no extrato
-4. Dentro da definição do usuário, crie um array que armazene as transações de um cliente.
-5. Crie um endpoint que utilize o método `POST` da entidade `users` que será responsável por cadastrar um usuário em um array de usuários. Neste momento, não se preocupe, com as validações descritas nas funcionalidades.
-6. Crie um método `GET` na entidade `users` função que será responsável por pegar todos os usuários existentes no array de usuários.
-7. Adicione, uma validação no item 1 (Criar conta): o usuário deve possuir mais do que 18 anos para conseguir se cadastrar. Caso não possua, exiba uma mensagem de erro.
+<p> Clonar o repositório:</p>
+
+```
+$ git clone https://github.com/Deborah-Vieira/backend.git
+```
+
+#### Entrar no diretório:
+
+```
+$ cd backend
+```
+
+#### Instalar as dependências:
+
+```
+$ npm install
+```
+
+#### Iniciar o projeto:
+
+```
+$ npm start
+```
+
+<p> Em seu terminal irá mostrar a mensagem do servidor executando.</p>
+
+## :bar_chart: Requisições
+
+<p>Para testar as requisições deve ter a ferramenta Postman ou Insomnia instalados em seu computador. Crie requisições com os métodos Post e Get, coloque a url correspondente a requisição desejada para testar a aplicação. </p>
+
+<p>Clique para instalar o insomnia </p>
+
+```
+$  https://insomnia.rest/download/
+```
+
+<p>Clique para instalar o Postman </p>
+
+```
+$  https://www.postman.com/downloads/
+```
+
+## :hammer: Tecnologias e Bibliotecas
+
+<p>Node</p> <p>Express</p> <p>Typescript</p> <p>Requisições com Insomnia</p>
+ 
+## Features
+- [x] Criar Contas
+- [x] Listar Contas
+- [x] Validação por idade
+
+<h4 align="center"> 
+	Concluído!
+</h4>
