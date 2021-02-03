@@ -1,4 +1,4 @@
-<h1 >Astromatch</h1>
+<h1 >Sistema Bancário</h1>
 <p >Projeto confeccionado no curso de Desenvolvedor(a) fullstack da Labenu. O projeto tem como finalizade demonstrar a criação de um servidor utilizando Node e Express. Utilizando Typescript para criação de endpoints.</p>
 
 # :ledger: Índice
