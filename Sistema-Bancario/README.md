@@ -1,5 +1,5 @@
 <h1 >Sistema Bancário</h1>
-<p >Projeto confeccionado no curso de Desenvolvedor(a) fullstack da Labenu. O projeto tem como finalizade demonstrar a criação de um servidor utilizando Node e Express. Utilizando Typescript para criação de endpoints.</p>
+<p >Projeto confeccionado no curso de Desenvolvedor(a) fullstack da Labenu. O projeto tem como finalizade demonstrar a criação de um servidor utilizando Node, Express e Typescript. </p>
 
 # :ledger: Índice
 
@@ -16,7 +16,7 @@
 <p>O projeto Sistema Bancário demonstra a utilização de um servidor Express com Node. Aqui foram criados 02 endpoints, que criam e listam contas de usuário. </p>
 
 projeto roando aqui
-![gif](https://user-images.githubusercontent.com/31224361/106182119-2dac3980-617d-11eb-88f0-62a8fed97b26.gif)
+https://user-images.githubusercontent.com/31224361/106800918-d6580e80-663f-11eb-81a0-4586784360ee.mp4
 
 ## :wrench: Instalação
 
