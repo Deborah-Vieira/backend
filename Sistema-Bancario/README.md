@@ -59,7 +59,7 @@ $ npm start
 
 ## :bar_chart: Requisições
 
-<p>Para testar as requisições deve ter a ferramenta Postman ou Insomnia instalados em seu computador. Crie requisições com os métodos Post e Get, coloque a url correspondente a requisição desejada para testar a aplicação. </p>
+<p>Para testar as requisições, deve ter instalado em seu computador umas das ferramentas Postman ou Insomnia. Crie requisições com os métodos Post e Get, coloque a url correspondente a requisição desejada para testar a aplicação. </p>
 
 <p>Clique para instalar o insomnia </p>
 
